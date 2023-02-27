@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDBN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DBN : "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/valDBN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvDBN"
+        app:layout_constraintStart_toEndOf="@id/tvDBN"
+        app:layout_constraintTop_toTopOf="@id/tvDBN"
+        tools:text="01M292" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSatTestTaket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="SAT Test Takers  : "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDBN" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/valTestTaker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvSatTestTaket"
+        app:layout_constraintStart_toEndOf="@id/tvSatTestTaket"
+        app:layout_constraintTop_toTopOf="@id/tvSatTestTaket"
+        tools:text="20" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAvgScrore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Average Score as  : "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSatTestTaket" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCriticalReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Critical Reading  : "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAvgScrore" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/valCriticalReading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvCriticalReading"
+        app:layout_constraintStart_toEndOf="@id/tvCriticalReading"
+        app:layout_constraintTop_toTopOf="@id/tvCriticalReading"
+        tools:text="20" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Maths : "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCriticalReading" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/valMaths"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvMaths"
+        app:layout_constraintStart_toEndOf="@id/tvMaths"
+        app:layout_constraintTop_toTopOf="@id/tvMaths"
+        tools:text="20" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvWriting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Writing : "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMaths" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/valWriting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvWriting"
+        app:layout_constraintStart_toEndOf="@id/tvWriting"
+        app:layout_constraintTop_toTopOf="@id/tvWriting"
+        tools:text="20" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
